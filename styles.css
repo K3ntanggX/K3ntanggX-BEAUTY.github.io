@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .linktree {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 50em; /* Maksimum lebar kartu */
+ /* Sesuaikan dengan lebar layar */
+
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; /* Pusatkan elemen vertikal */
+    justify-content: space-between; /* Letakkan konten di atas dan tombol di bawah */
+    position: relative;
+    transition: transform 0.2s ease-in-out; /* Animasi transisi */
+  }
+  
+  .linktree:hover {
+    transform: scale(1.05); /* Memperbesar kartu saat dihover */
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid #ff9a9e; /* Tambahkan border putih sekitar gambar */
+  }
+  .profile h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .profile p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .menu-button {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid #ff9a9e;
+    border-radius: 5px;
+    color: #ff9a9e;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    background: linear-gradient(to right, transparent 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+  }
+
+  .menu-button:hover {
+    background: linear-gradient(to right, #ff9a9e 50%, #fad0c4 50%);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    color: #fff;
+    border-color: #ed8184;
+  }
+  
+ /* Media query untuk desktop */
+@media (min-width: 1024px) {
+    .linktree {
+      /* Tetap tengah untuk desktop */
+      max-width: 50%; /* Misalnya, batasi lebar kartu ke 50% dari lebar layar */
+      margin: 0 auto; /* Menggeser kartu ke tengah secara horizontal */
+    }
+  
+    /* Sesuaikan gaya gambar untuk desktop di sini */
+    .profile img {
+      border: 4px solid #ff9a9e; /* Contoh: Tambahkan border putih */
+    }
+  
+    /* Tambahkan penyesuaian lainnya sesuai kebutuhan */
+  }
+  
+  /* Media query untuk tablet (misalnya, lebar layar antara 768px dan 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .linktree {
+      /* Tetap tengah untuk tablet */
+      max-width: 80%; /* Misalnya, batasi lebar kartu ke 80% dari lebar layar */
+      margin: 0 auto; /* Menggeser kartu ke tengah secara horizontal */
+    }
+  
+    /* Sesuaikan gaya gambar untuk tablet di sini */
+  
+    /* Mengurangi ukuran font untuk tampilan tablet */
+    .profile h1 {
+      font-size: 20px; /* Contoh: ukuran font h1 menjadi lebih kecil */
+    }
+  
+    .profile p {
+      font-size: 14px; /* Contoh: ukuran font paragraf menjadi lebih kecil */
+    }
+  
+    /* Tambahkan penyesuaian lainnya sesuai kebutuhan */
+  }
+  
+  /* Media query untuk perangkat seluler (misalnya, lebar layar kurang dari 768px) */
+@media (max-width: 767px) {
+    .linktree {
+      /* Tetap tengah untuk seluler */
+      max-width: 80%; /* Misalnya, batasi lebar kartu ke 80% dari lebar layar */
+      margin: 0 auto; /* Menggeser kartu ke tengah secara horizontal */
+    }
+  
+    /* Sesuaikan gaya gambar untuk seluler di sini */
+  
+    /* Mengurangi ukuran font untuk tampilan seluler */
+    .profile h1 {
+      font-size: 18px; /* Contoh: ukuran font h1 menjadi lebih kecil */
+    }
+  
+    .profile p {
+      font-size: 14px; /* Contoh: ukuran font paragraf menjadi lebih kecil */
+    }
+  
+    /* Tambahkan penyesuaian lainnya sesuai kebutuhan */
+  }
+  
